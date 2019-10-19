@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Star Wars RPG</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+    <div id="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Pick Your Avatar!</h1>
+            <br>
+            <p class="lead">I just think if you don't choose Hello Kitty to save the world, are you even helping?</p>
+            <hr class="my-4">
+            <p><strong>Only one can be your avatar. The others will turn against you...choose wisely.</strong></p>
+        </div>
+    </div><!--end of jumbotron container header-->
+
+    <div id="container hero-selector">
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/hellokitty1.jpg" class="card-img-top" alt="CrystalOne">
+                <div class="card-body">
+                    <h5 class="card-title">Hello Kitty</h5>
+                    <p class="card-text">Hello Kitty was born in the suburbs of London. She lives with her parents and her twin sister Mimmy who is her best friend. Her attack power might be a lie. Her hobbies include baking cookies and making new friends. As she always says, "you can never have too many friends!"</p>
+                    <h6 class="card-title">Attack Power: 7</h5>
+                        <button type="button" class="btn btn-primary" index="3" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button>
+                </div>
+            </div><!--end of avatar-one-->
+        
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/headofmaul.jpeg" class="card-img-top" alt="Maul">
+                <div class="card-body">
+                    <h5 class="card-title">The Head of Darth Maul</h5>
+                    <p class="card-text">Use only 1/4 of the power of the full Darth Maul to defeat your enemies.</p>
+                    <h6 class="card-title">Attack Power: 3</h5>
+                        <button type="button" class="btn btn-primary" index="3" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button>
+                </div>
+            </div><!--end of avatar-two-->
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/paulrudd.jpeg" class="card-img-top" alt="Paul Rudd">
+                <div class="card-body">
+                    <h5 class="card-title">Paul Rudd</h5>
+                    <p class="card-text">Paul Rudd is an American actor, comedian, screenwriter, and film producer. His attack power might be 11. Rudd studied theater at the University of Kansas and the American Academy of Dramatic Arts, before making his acting debut in 1992 with NBC's drama series Sisters.</p>
+                    <h6 class="card-title">Attack Power: 11</h5>
+                        <button type="button" class="btn btn-primary" index="3" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button>
+                </div>
+            </div><!--end of avatar-three-->
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/keanu.jpg" class="card-img-top" alt="Keanu">
+                <div class="card-body">
+                    <h5 class="card-title">Keanu Reeves</h5>
+                    <p class="card-text">It's Keanu Reeves. Obviously, you are going to pick him...hit the button already!</p>
+                    <p class="card-text">It's probably not a good time to mention that his Attack Power isn't real...</p>
+                    <h6 class="card-title">Attack Power: 20</h5>
+                        <button type="button" class="btn btn-primary" index="3" data-toggle="modal" data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button>
+                </div>
+            </div><!--end of avatar-three-->
+        </div><!--end of card group-->
+    </div><!--end of game-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Fight! Fight! Fight!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/keanu.jpg" class="card-img-top" alt="Keanu">
+                        <div class="card-body">
+                            <h5 class="card-title">Keanu Reeves</h5>
+                            <h6 class="card-title">Attack Power: 20</h5>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                            <img src="assets/images/paulrudd.jpeg" class="card-img-top" alt="Keanu">
+                            <div class="card-body">
+                                <h5 class="card-title">Paul Rudd</h5>
+                                <h6 class="card-title">Attack Power: 20</h5>
+                            </div>
+                        </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="end-content">
+    <p id="footer">Copyright &copy; 2019</p>
+</footer><!--end of footer-->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/javascript/index.js"></script>
+                
+</body>
+</html>
